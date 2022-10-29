@@ -1,5 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Browser from "./Components/Browser";
 
 function App() {
   return (
@@ -11,13 +12,14 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://bovada.lv"
           target="_blank"
           rel="noopener noreferrer"
         >
           Learn React
         </a>
       </header>
+      <Browser />
     </div>
   );
 }
