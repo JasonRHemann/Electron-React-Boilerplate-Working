@@ -4,9 +4,11 @@ const isDev = require("electron-is-dev");
 let mainWindow;
 
 function createWindow() {
-  mainWindow = new BrowserWindow({ width: 1100, height: 680, show: false });
+  // mainWindow = new BrowserWindow({ width: 1100, height: 680, show: false });
+  mainWindow = new BrowserWindow();
+
   const startUrl = isDev
-    ? "https://google.com"
+    ? "http://localhost:3000"
     : `file://${path.join(__dirname, "../build/index.html")}`;
   mainWindow.loadURL(startUrl);
   mainWindow.once("ready-to-show", () => mainWindow.show());
